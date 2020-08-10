@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Pascucci project website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="header">
+        <div class="container">
+            <img src="images/logo.png" alt="logo" class="logo">
+            <div class="header-text">
+                <h1>김수현과 오예은이 파스쿠찌팀</h1>
+                <span class="square"></span>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Quia necessitatibus reiciendis natus sequi eligendi, 
+                    perspiciatis consequatur laudantium nihil quidem eius possimus, 
+                    quae minima enim, maiores provident dicta recusandae commodi mollitia!
+                </p>
+                <button class="common-btn">Read More</button>
+                <div class="line">
+                    <span class="line-1"></span><br>
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span><br>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <nav id="sideNav">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">PROJECT</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <img src="images/menu.png" alt="메뉴버튼" id="menuBtn">
+
+
+<!-- about -->
+    <section id="about">
+        <div class="about-left-col">
+            <img src="images/about.png" alt="">
+        </div>
+        <div class="about-right-col">
+            <div class="about-text">
+                <h1>about us</h1>
+                <span class="square"></span>
+                <p>Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Possimus iusto natus,
+                    impedit veniam veritatis sed officia eaque 
+                    et saepe repellendus!
+                </p><br>
+                <div class="line">
+                    <span class="line-1"></span><br>
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span><br>
+                </div>
+                <h2>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                     A repudiandae earum nihil
+                </h2>
+                <h3>
+                    --Lorem ipsum dolor sit amet.
+                </h3>
+            </div>
+        </div>
+    </section>
+
+<!-- feature -->
+    <section id="features">
+        <div class="feature-row">
+            <div class="feature-col">
+                <img src="images/pic-1.png" alt="사진1">
+                <h4>김아무개의 일대기</h4>
+                <p>김아무개의 일대기</p>
+            </div>
+            <div class="feature-col">
+                <img src="images/pic-2.png" alt="사진1">
+                <h4>알리바이 생성기</h4>
+                <p>알리바이 생성기</p>
+            </div>
+            <div class="feature-col">
+                <img src="images/pic-3.png" alt="사진1">
+                <h4>제로크래커</h4>
+                <p>제로크래커</p>
+            </div>
+        </div>
+        
+        <div class="feature-btn">
+            <div class="line">
+                <span class="line-1"></span><br>
+                <span class="line-2"></span><br>
+                <span class="line-3"></span><br>
+            </div>
+            <button class="common-btn">contact us!</button>
+        </div>
+    </section>
+    
+    
+
+
+
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("sideNav");
+
+        sideNav.style.right = "-250px";
+        menuBtn.onclick = function(){
+            if(sideNav.style.right == "-250px"){
+                sideNav.style.right = "0";
+            }
+            else{
+                sideNav.style.right = "-250px";
+            }
+        }
+    </script>
+
+
+</body>
+</html>
